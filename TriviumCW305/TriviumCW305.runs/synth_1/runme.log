@@ -1,0 +1,702 @@
+
+*** Running vivado
+    with args -log cw305_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cw305_top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source cw305_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/kngo/git/Kalles_IpCores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top cw305_top -part xc7a100tftg256-1 -directive AreaOptimized_high -control_set_opt_threshold 1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tftg256-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24543 
+WARNING: [Synth 8-6901] identifier 'MEMORY_BYTES' is used before its declaration [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:98]
+WARNING: [Synth 8-6901] identifier 'MEMORY_BYTES' is used before its declaration [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:99]
+WARNING: [Synth 8-6901] identifier 'KEY_WIDTH' is used before its declaration [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:123]
+WARNING: [Synth 8-6901] identifier 'PT_WIDTH' is used before its declaration [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:124]
+WARNING: [Synth 8-6901] identifier 'PT_WIDTH' is used before its declaration [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:125]
+WARNING: [Synth 8-6901] identifier 'CT_WIDTH' is used before its declaration [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:126]
+WARNING: [Synth 8-6901] identifier 'CT_WIDTH' is used before its declaration [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:127]
+WARNING: [Synth 8-6901] identifier 'MEMORY_BYTES' is used before its declaration [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/usb_module.v:43]
+WARNING: [Synth 8-6901] identifier 'MEMORY_BYTES' is used before its declaration [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/usb_module.v:44]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1729.258 ; gain = 157.410 ; free physical = 25529 ; free virtual = 77114
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cw305_top' [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/cw305_Trivium.vhd:69]
+	Parameter CHALLENGE_WIDTH bound to: 128 - type: integer 
+	Parameter CRYPTO_TEXT_WIDTH bound to: 80 - type: integer 
+	Parameter CRYPTO_KEY_WIDTH bound to: 80 - type: integer 
+	Parameter CRYPTO_CIPHER_WIDTH bound to: 1024 - type: integer 
+	Parameter MEMORY_WIDTH bound to: 10 - type: integer 
+	Parameter MEMORY_BYTES bound to: 1024 - type: integer 
+	Parameter MEMORY_MASK bound to: 1023 - type: integer 
+INFO: [Synth 8-3491] module 'usb_module' declared at '/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/usb_module.v:33' bound to instance 'my_usb' of component 'usb_module' [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/cw305_Trivium.vhd:240]
+INFO: [Synth 8-6157] synthesizing module 'usb_module' [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/usb_module.v:33]
+	Parameter MEMORY_WIDTH bound to: 10 - type: integer 
+	Parameter MEMORY_BYTES bound to: 1024 - type: integer 
+	Parameter MEMORY_MASK bound to: 1023 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [/opt/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33321]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (1#1) [/opt/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33321]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [/opt/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'usb_module' (3#1) [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/usb_module.v:33]
+	Parameter MEMORY_WIDTH bound to: 10 - type: integer 
+	Parameter MEMORY_BYTES bound to: 1024 - type: integer 
+	Parameter KEY_WIDTH bound to: 80 - type: integer 
+	Parameter PT_WIDTH bound to: 80 - type: integer 
+	Parameter CT_WIDTH bound to: 1024 - type: integer 
+	Parameter done_edge_sensitive bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'registers' declared at '/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:95' bound to instance 'reg_inst' of component 'registers' [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/cw305_Trivium.vhd:260]
+INFO: [Synth 8-6157] synthesizing module 'registers' [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:95]
+	Parameter MEMORY_WIDTH bound to: 10 - type: integer 
+	Parameter MEMORY_BYTES bound to: 1024 - type: integer 
+	Parameter KEY_WIDTH bound to: 80 - type: integer 
+	Parameter PT_WIDTH bound to: 80 - type: integer 
+	Parameter CT_WIDTH bound to: 1024 - type: integer 
+	Parameter done_edge_sensitive bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BUFGCTRL' [/opt/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1136]
+	Parameter CE_TYPE_CE0 bound to: SYNC - type: string 
+	Parameter CE_TYPE_CE1 bound to: SYNC - type: string 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE0_INVERTED bound to: 1'b0 
+	Parameter IS_CE1_INVERTED bound to: 1'b0 
+	Parameter IS_I0_INVERTED bound to: 1'b0 
+	Parameter IS_I1_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE0_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE1_INVERTED bound to: 1'b0 
+	Parameter IS_S0_INVERTED bound to: 1'b0 
+	Parameter IS_S1_INVERTED bound to: 1'b0 
+	Parameter PRESELECT_I0 bound to: FALSE - type: string 
+	Parameter PRESELECT_I1 bound to: FALSE - type: string 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCTRL' (4#1) [/opt/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1136]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [/opt/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:49468]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (5#1) [/opt/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:49468]
+WARNING: [Synth 8-3848] Net reg_kalle in module/entity registers does not have driver. [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:156]
+WARNING: [Synth 8-3848] Net init in module/entity registers does not have driver. [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'registers' (6#1) [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v:95]
+	Parameter DATA_LENGTH bound to: 80 - type: integer 
+INFO: [Synth 8-3491] module 'TriviumKalle' declared at '/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/TriviumKalle.vhd:37' bound to instance 'Triv_Core' of component 'TriviumKalle' [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/cw305_Trivium.vhd:356]
+INFO: [Synth 8-638] synthesizing module 'TriviumKalle' [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/TriviumKalle.vhd:50]
+	Parameter DATA_LENGTH bound to: 80 - type: integer 
+	Parameter DATA_LENGTH bound to: 80 - type: integer 
+INFO: [Synth 8-3491] module 'TriviumRegs' declared at '/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/TriviumRegs.vhd:13' bound to instance 'TriviumLFSR' of component 'TriviumRegs' [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/TriviumKalle.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'TriviumRegs' [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/TriviumRegs.vhd:25]
+	Parameter DATA_LENGTH bound to: 80 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* srl_style = "register" *) [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/TriviumRegs.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'TriviumRegs' (7#1) [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/TriviumRegs.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'TriviumKalle' (8#1) [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/TriviumKalle.vhd:50]
+WARNING: [Synth 8-614] signal 'Triv_initDone' is read in the process but is not in the sensitivity list [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/cw305_Trivium.vhd:402]
+WARNING: [Synth 8-3848] Net crypt_textin in module/entity cw305_top does not have driver. [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/cw305_Trivium.vhd:181]
+INFO: [Synth 8-256] done synthesizing module 'cw305_top' (9#1) [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/cw305_Trivium.vhd:69]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8191]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8190]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8189]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8188]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8187]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8186]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8185]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8184]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8183]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8182]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8181]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8180]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8179]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8178]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8177]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8176]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8175]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8174]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8173]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8172]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8171]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8170]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8169]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8168]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8167]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8166]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8165]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8164]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8163]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8162]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8161]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8160]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8159]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8158]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8157]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8156]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8155]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8154]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8153]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8152]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8151]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8150]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8149]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8148]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8147]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8146]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8145]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8144]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8143]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8142]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8141]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8140]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8139]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8138]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8137]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8136]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8135]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8134]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8133]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8132]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8131]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8130]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8129]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8128]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8127]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8126]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8125]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8124]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8123]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8122]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8121]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8120]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8119]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8118]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8117]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8116]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8115]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8114]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8113]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8112]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8111]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8110]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8109]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8108]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8107]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8106]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8105]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8104]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8103]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8102]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8101]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8100]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8099]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8098]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8097]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8096]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8095]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8094]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8093]
+WARNING: [Synth 8-3331] design registers has unconnected port mem_output[8092]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1778.164 ; gain = 206.316 ; free physical = 25541 ; free virtual = 77127
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1795.977 ; gain = 224.129 ; free physical = 25541 ; free virtual = 77128
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1795.977 ; gain = 224.129 ; free physical = 25541 ; free virtual = 77128
+---------------------------------------------------------------------------------
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'reg_inst/CCLK_MUX' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'my_usb/clkibuf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/constrs_1/new/Pins.xdc]
+Finished Parsing XDC File [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/constrs_1/new/Pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/constrs_1/new/Pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cw305_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cw305_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2040.477 ; gain = 0.000 ; free physical = 25350 ; free virtual = 76937
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2040.477 ; gain = 0.000 ; free physical = 25350 ; free virtual = 76937
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 25510 ; free virtual = 77097
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 25510 ; free virtual = 77097
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 25510 ; free virtual = 77097
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'TriviumKalle'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'cw305_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 st_idle |                             0001 |                               00
+                 st_load |                             0010 |                               01
+                 st_init |                             0100 |                               10
+                  st_run |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'TriviumKalle'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                st_reset |                           000001 |                              000
+                 st_load |                           000010 |                              001
+                 st_init |                           000100 |                              010
+                  st_run |                           001000 |                              011
+                st_store |                           010000 |                              100
+                 st_stop |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'cw305_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 25415 ; free virtual = 77002
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |usb_module__GCB0 |           1|     32640|
+|2     |usb_module__GCB1 |           1|     10200|
+|3     |usb_module__GCB2 |           1|     12744|
+|4     |usb_module__GCB3 |           1|     16320|
+|5     |usb_module__GCB4 |           1|        24|
+|6     |usb_module__GCB5 |           1|     20400|
+|7     |usb_module__GCB6 |           1|     41072|
+|8     |usb_module__GCB7 |           1|     32869|
+|9     |usb_module__GCB8 |           1|     30600|
+|10    |usb_module__GCB9 |           1|      8160|
+|11    |cw305_top__GC0   |           1|      7506|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register memory_input_reg [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/usb_module.v:80]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 4     
++---Registers : 
+	             8192 Bit    Registers := 1     
+	             1024 Bit    Registers := 2     
+	              288 Bit    Registers := 1     
+	               80 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   8192 Bit        Muxes := 1     
+	   2 Input   1024 Bit        Muxes := 1     
+	   2 Input    288 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register memory_input_reg [/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/usb_module.v:80]
+Hierarchical RTL Component report 
+Module cw305_top 
+Detailed RTL Component Info : 
++---Registers : 
+	             1024 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module usb_module 
+Detailed RTL Component Info : 
++---Registers : 
+	             8192 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   8192 Bit        Muxes := 1     
+Module registers 
+Detailed RTL Component Info : 
++---Registers : 
+	             1024 Bit    Registers := 1     
+	               80 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module TriviumRegs 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 4     
++---Registers : 
+	              288 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    288 Bit        Muxes := 1     
+Module TriviumKalle 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[25] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[24] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[23] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[22] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[21] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[20] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[19] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[18] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[17] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[16] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[15] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[14] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[13] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design usb_module__GCB6 has port P[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:30 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 23020 ; free virtual = 74643
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |usb_module__GCB0 |           1|      9095|
+|2     |usb_module__GCB1 |           1|      2847|
+|3     |usb_module__GCB2 |           1|      3919|
+|4     |usb_module__GCB3 |           1|      2488|
+|5     |usb_module__GCB4 |           1|        24|
+|6     |usb_module__GCB5 |           1|      3110|
+|7     |usb_module__GCB6 |           1|      1732|
+|8     |usb_module__GCB7 |           1|     24679|
+|9     |usb_module__GCB8 |           1|      4665|
+|10    |usb_module__GCB9 |           1|      1244|
+|11    |cw305_top__GC0   |           1|      5159|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:35 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 22864 ; free virtual = 74509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:40 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 22829 ; free virtual = 74475
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |usb_module__GCB0 |           1|       302|
+|2     |usb_module__GCB1 |           1|      2016|
+|3     |usb_module__GCB2 |           1|        97|
+|4     |usb_module__GCB4 |           1|        24|
+|5     |usb_module__GCB6 |           1|        97|
+|6     |usb_module__GCB7 |           1|      1027|
+|7     |cw305_top__GC0   |           1|      5159|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[73] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[74] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[76] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[77] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[69] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[78] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_inst/reg_crypt_textout_reg[7] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:42 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 22827 ; free virtual = 74480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:43 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 22827 ; free virtual = 74481
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:43 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 22827 ; free virtual = 74481
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:44 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 22827 ; free virtual = 74481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:44 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 22827 ; free virtual = 74481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:44 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 22827 ; free virtual = 74480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:44 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 22827 ; free virtual = 74480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |BUFGCTRL |     1|
+|3     |CARRY4   |    25|
+|4     |LUT1     |    15|
+|5     |LUT2     |   104|
+|6     |LUT3     |   188|
+|7     |LUT4     |  1048|
+|8     |LUT5     |    89|
+|9     |LUT6     |   388|
+|10    |MUXF7    |   133|
+|11    |MUXF8    |    64|
+|12    |ODDR     |     1|
+|13    |FDCE     |     8|
+|14    |FDPE     |     2|
+|15    |FDRE     |  3629|
+|16    |FDSE     |     3|
+|17    |IBUF     |    28|
+|18    |IBUFG    |     1|
+|19    |IOBUF    |     8|
+|20    |OBUF     |     5|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+-------------+------+
+|      |Instance        |Module       |Cells |
++------+----------------+-------------+------+
+|1     |top             |             |  5743|
+|2     |  Triv_Core     |TriviumKalle |  1509|
+|3     |    TriviumLFSR |TriviumRegs  |  1476|
+|4     |  my_usb        |usb_module   |   404|
+|5     |  reg_inst      |registers    |  1516|
++------+----------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:44 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 22827 ; free virtual = 74480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:45 . Memory (MB): peak = 2040.477 ; gain = 224.129 ; free physical = 25315 ; free virtual = 76969
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:48 . Memory (MB): peak = 2040.477 ; gain = 468.629 ; free physical = 25325 ; free virtual = 76969
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'reg_inst/CCLK_MUX' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 232 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'my_usb/clkibuf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2080.500 ; gain = 0.000 ; free physical = 25260 ; free virtual = 76903
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IBUFG => IBUF: 1 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+128 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:52 . Memory (MB): peak = 2080.500 ; gain = 677.344 ; free physical = 25362 ; free virtual = 77006
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2080.500 ; gain = 0.000 ; free physical = 25362 ; free virtual = 77006
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.runs/synth_1/cw305_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cw305_top_utilization_synth.rpt -pb cw305_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 10 14:13:45 2020...

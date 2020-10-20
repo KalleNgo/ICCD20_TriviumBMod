@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cw305_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cw305_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="11380067081fs"></ZoomStartTime>
+      <ZoomEndTime time="11792084332fs"></ZoomEndTime>
+      <Cursor1Time time="11560000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="328"></NameColumnWidth>
+      <ValueColumnWidth column_width="239"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="60" />
+   <wvobject type="logic" fp_name="/cw305_top/usb_clk">
+      <obj_property name="ElementShortName">usb_clk</obj_property>
+      <obj_property name="ObjectShortName">usb_clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/usb_data">
+      <obj_property name="ElementShortName">usb_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">usb_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/usb_addr">
+      <obj_property name="ElementShortName">usb_addr[20:0]</obj_property>
+      <obj_property name="ObjectShortName">usb_addr[20:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/usb_rdn">
+      <obj_property name="ElementShortName">usb_rdn</obj_property>
+      <obj_property name="ObjectShortName">usb_rdn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/usb_wrn">
+      <obj_property name="ElementShortName">usb_wrn</obj_property>
+      <obj_property name="ObjectShortName">usb_wrn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/usb_cen">
+      <obj_property name="ElementShortName">usb_cen</obj_property>
+      <obj_property name="ObjectShortName">usb_cen</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/usb_trigger">
+      <obj_property name="ElementShortName">usb_trigger</obj_property>
+      <obj_property name="ObjectShortName">usb_trigger</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/sw1">
+      <obj_property name="ElementShortName">sw1</obj_property>
+      <obj_property name="ObjectShortName">sw1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/sw2">
+      <obj_property name="ElementShortName">sw2</obj_property>
+      <obj_property name="ObjectShortName">sw2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/sw3">
+      <obj_property name="ElementShortName">sw3</obj_property>
+      <obj_property name="ObjectShortName">sw3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/sw4">
+      <obj_property name="ElementShortName">sw4</obj_property>
+      <obj_property name="ObjectShortName">sw4</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/pushbutton">
+      <obj_property name="ElementShortName">pushbutton</obj_property>
+      <obj_property name="ObjectShortName">pushbutton</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/led1">
+      <obj_property name="ElementShortName">led1</obj_property>
+      <obj_property name="ObjectShortName">led1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/led2">
+      <obj_property name="ElementShortName">led2</obj_property>
+      <obj_property name="ObjectShortName">led2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/led3">
+      <obj_property name="ElementShortName">led3</obj_property>
+      <obj_property name="ObjectShortName">led3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/pll_clk1">
+      <obj_property name="ElementShortName">pll_clk1</obj_property>
+      <obj_property name="ObjectShortName">pll_clk1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/tio_trigger">
+      <obj_property name="ElementShortName">tio_trigger</obj_property>
+      <obj_property name="ObjectShortName">tio_trigger</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/tio_clkout">
+      <obj_property name="ElementShortName">tio_clkout</obj_property>
+      <obj_property name="ObjectShortName">tio_clkout</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/tio_clkin">
+      <obj_property name="ElementShortName">tio_clkin</obj_property>
+      <obj_property name="ObjectShortName">tio_clkin</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/usb_clk_buf">
+      <obj_property name="ElementShortName">usb_clk_buf</obj_property>
+      <obj_property name="ObjectShortName">usb_clk_buf</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/usb_timer_heartbeat">
+      <obj_property name="ElementShortName">usb_timer_heartbeat[24:0]</obj_property>
+      <obj_property name="ObjectShortName">usb_timer_heartbeat[24:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/crypt_clk_heartbeat">
+      <obj_property name="ElementShortName">crypt_clk_heartbeat[22:0]</obj_property>
+      <obj_property name="ObjectShortName">crypt_clk_heartbeat[22:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/crypt_clk">
+      <obj_property name="ElementShortName">crypt_clk</obj_property>
+      <obj_property name="ObjectShortName">crypt_clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/crypt_key">
+      <obj_property name="ElementShortName">crypt_key[79:0]</obj_property>
+      <obj_property name="ObjectShortName">crypt_key[79:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/crypt_textin">
+      <obj_property name="ElementShortName">crypt_textin[79:0]</obj_property>
+      <obj_property name="ObjectShortName">crypt_textin[79:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/crypt_textout">
+      <obj_property name="ElementShortName">crypt_textout[79:0]</obj_property>
+      <obj_property name="ObjectShortName">crypt_textout[79:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/crypt_cipherin">
+      <obj_property name="ElementShortName">crypt_cipherin[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">crypt_cipherin[1023:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/crypt_init">
+      <obj_property name="ElementShortName">crypt_init</obj_property>
+      <obj_property name="ObjectShortName">crypt_init</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/crypt_ready">
+      <obj_property name="ElementShortName">crypt_ready</obj_property>
+      <obj_property name="ObjectShortName">crypt_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/crypt_start">
+      <obj_property name="ElementShortName">crypt_start</obj_property>
+      <obj_property name="ObjectShortName">crypt_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/crypt_done">
+      <obj_property name="ElementShortName">crypt_done</obj_property>
+      <obj_property name="ObjectShortName">crypt_done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/memory_input">
+      <obj_property name="ElementShortName">memory_input[8191:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_input[8191:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/memory_output">
+      <obj_property name="ElementShortName">memory_output[8191:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_output[8191:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/aes_clk">
+      <obj_property name="ElementShortName">aes_clk</obj_property>
+      <obj_property name="ObjectShortName">aes_clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/aes_key">
+      <obj_property name="ElementShortName">aes_key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">aes_key[127:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/aes_pt">
+      <obj_property name="ElementShortName">aes_pt[127:0]</obj_property>
+      <obj_property name="ObjectShortName">aes_pt[127:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/aes_ct">
+      <obj_property name="ElementShortName">aes_ct[127:0]</obj_property>
+      <obj_property name="ObjectShortName">aes_ct[127:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/aes_load">
+      <obj_property name="ElementShortName">aes_load</obj_property>
+      <obj_property name="ObjectShortName">aes_load</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/aes_busy">
+      <obj_property name="ElementShortName">aes_busy</obj_property>
+      <obj_property name="ObjectShortName">aes_busy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/kalle">
+      <obj_property name="ElementShortName">kalle</obj_property>
+      <obj_property name="ObjectShortName">kalle</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/Triv_rst">
+      <obj_property name="ElementShortName">Triv_rst</obj_property>
+      <obj_property name="ObjectShortName">Triv_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/Triv_clk">
+      <obj_property name="ElementShortName">Triv_clk</obj_property>
+      <obj_property name="ObjectShortName">Triv_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/Triv_initDone">
+      <obj_property name="ElementShortName">Triv_initDone</obj_property>
+      <obj_property name="ObjectShortName">Triv_initDone</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/Triv_buffer">
+      <obj_property name="ElementShortName">Triv_buffer[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">Triv_buffer[1023:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/cw305_top/Triv_count">
+      <obj_property name="ElementShortName">Triv_count</obj_property>
+      <obj_property name="ObjectShortName">Triv_count</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/Triv_status">
+      <obj_property name="ElementShortName">Triv_status</obj_property>
+      <obj_property name="ObjectShortName">Triv_status</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/Triv_load">
+      <obj_property name="ElementShortName">Triv_load</obj_property>
+      <obj_property name="ObjectShortName">Triv_load</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/cw305_top/current_state">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/cw305_top/next_state">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/puf_clk">
+      <obj_property name="ElementShortName">puf_clk</obj_property>
+      <obj_property name="ObjectShortName">puf_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/puf_rst">
+      <obj_property name="ElementShortName">puf_rst</obj_property>
+      <obj_property name="ObjectShortName">puf_rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/puf_Chall">
+      <obj_property name="ElementShortName">puf_Chall[127:0]</obj_property>
+      <obj_property name="ObjectShortName">puf_Chall[127:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/puf_Rsp">
+      <obj_property name="ElementShortName">puf_Rsp[127:0]</obj_property>
+      <obj_property name="ObjectShortName">puf_Rsp[127:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/puf_start">
+      <obj_property name="ElementShortName">puf_start</obj_property>
+      <obj_property name="ObjectShortName">puf_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cw305_top/puf_busy">
+      <obj_property name="ElementShortName">puf_busy</obj_property>
+      <obj_property name="ObjectShortName">puf_busy</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/cw305_top/CHALLENGE_WIDTH">
+      <obj_property name="ElementShortName">CHALLENGE_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">CHALLENGE_WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/cw305_top/CRYPTO_TEXT_WIDTH">
+      <obj_property name="ElementShortName">CRYPTO_TEXT_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">CRYPTO_TEXT_WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/cw305_top/CRYPTO_KEY_WIDTH">
+      <obj_property name="ElementShortName">CRYPTO_KEY_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">CRYPTO_KEY_WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/cw305_top/CRYPTO_CIPHER_WIDTH">
+      <obj_property name="ElementShortName">CRYPTO_CIPHER_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">CRYPTO_CIPHER_WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cw305_top/Triv_Core/init_counter">
+      <obj_property name="ElementShortName">init_counter[10:0]</obj_property>
+      <obj_property name="ObjectShortName">init_counter[10:0]</obj_property>
+   </wvobject>
+</wave_config>

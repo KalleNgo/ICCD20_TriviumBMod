@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/TriviumKalle.vhd,1578483738,vhdl,,,,triviumkalle,,,,,,,,
+/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/TriviumRegs.vhd,1578404118,vhdl,,,,triviumregs,,,,,,,,
+/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/cw305_Trivium.vhd,1578483832,vhdl2008,,,,cw305_top,,,,,,,,
+/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/registers.v,1578056482,verilog,,/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/usb_module.v,,registers,,,,,,,,
+/home/kngo/Research/Elena/TriviumCW305/TriviumCW305.srcs/sources_1/new/usb_module.v,1577975338,verilog,,,,usb_module,,,,,,,,

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 10 14:11:47 2020
+# Process ID: 24482
+# Current directory: /home/kngo/Research/Elena/TriviumCW305/TriviumCW305.runs/synth_1
+# Command line: vivado -log cw305_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cw305_top.tcl
+# Log file: /home/kngo/Research/Elena/TriviumCW305/TriviumCW305.runs/synth_1/cw305_top.vds
+# Journal file: /home/kngo/Research/Elena/TriviumCW305/TriviumCW305.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source cw305_top.tcl -notrace

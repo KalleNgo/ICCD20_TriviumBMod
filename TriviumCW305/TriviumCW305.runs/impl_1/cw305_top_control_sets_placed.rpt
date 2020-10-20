@@ -1,0 +1,111 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Fri Jan 10 14:14:11 2020
+| Host         : Carbon running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_control_sets -verbose -file cw305_top_control_sets_placed.rpt
+| Design       : cw305_top
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    33 |
+|    Minimum number of control sets                        |    33 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    38 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    33 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |    21 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1249 |          396 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             170 |           31 |
+| Yes          | No                    | No                     |            2132 |          506 |
+| Yes          | No                    | Yes                    |              10 |            2 |
+| Yes          | Yes                   | No                     |              81 |           28 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-----------------------------------------------+------------------------------------+------------------+----------------+
+|     Clock Signal    |                 Enable Signal                 |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++---------------------+-----------------------------------------------+------------------------------------+------------------+----------------+
+|  usb_wrn_IBUF_BUFG  |                                               |                                    |                1 |              1 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[260]_i_1_n_0              | my_usb/memory_input[256]_i_1_n_0   |                1 |              1 |
+|  reg_inst/crypt_clk | Triv_Core/FSM_onehot_current_state[3]_i_1_n_0 | Triv_rst                           |                1 |              4 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[260]_i_1_n_0              |                                    |                1 |              4 |
+|  reg_inst/crypt_clk | FSM_onehot_current_state[5]_i_1_n_0           | reg_inst/start_int_reg_0           |                1 |              6 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[4119]_i_1_n_0             |                                    |                2 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[4175]_i_1_n_0             |                                    |                2 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[4167]_i_1_n_0             |                                    |                2 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[4159]_i_1_n_0             |                                    |                3 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[4151]_i_1_n_0             |                                    |                2 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[4143]_i_1_n_0             |                                    |                2 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[4135]_i_1_n_0             |                                    |                3 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[4127]_i_1_n_0             |                                    |                3 |              8 |
+| ~usb_rdn_IBUF_BUFG  |                                               |                                    |                6 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[4111]_i_1_n_0             |                                    |                2 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[2127]_i_2_n_0             | my_usb/memory_input[2127]_i_1_n_0  |                2 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[2119]_i_2_n_0             | my_usb/memory_input[2119]_i_1_n_0  |                2 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[2111]_i_2_n_0             | my_usb/memory_input[2111]_i_1_n_0  |                5 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[2103]_i_2_n_0             | my_usb/memory_input[2103]_i_1_n_0  |                1 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[2095]_i_2_n_0             | my_usb/memory_input[2095]_i_1_n_0  |                4 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[2087]_i_2_n_0             | my_usb/memory_input[2087]_i_1_n_0  |                3 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[2079]_i_2_n_0             | my_usb/memory_input[2079]_i_1_n_0  |                2 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[2071]_i_2_n_0             | my_usb/memory_input[2071]_i_1_n_0  |                3 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[4103]_i_1_n_0             |                                    |                3 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[2055]_i_2_n_0             | my_usb/memory_input[2055]_i_1_n_0  |                3 |              8 |
+|  usb_wrn_IBUF_BUFG  | my_usb/memory_input[2063]_i_2_n_0             | my_usb/memory_input[2063]_i_1_n_0  |                2 |              8 |
+|  reg_inst/crypt_clk |                                               | Triv_Core/init_counter[10]_i_1_n_0 |                3 |             11 |
+|  my_usb/usb_clk_buf |                                               |                                    |                8 |             28 |
+|  reg_inst/crypt_clk |                                               | Triv_count[0]_i_1_n_0              |                8 |             32 |
+|  reg_inst/crypt_clk |                                               | Triv_Core/Load_En                  |               20 |            127 |
+|  reg_inst/crypt_clk | FSM_onehot_current_state[5]_i_2_n_0           |                                    |              257 |           1024 |
+|  reg_inst/crypt_clk | reg_inst/reg_crypt_cipherout0                 |                                    |              224 |           1024 |
+|  reg_inst/crypt_clk |                                               |                                    |              381 |           1212 |
++---------------------+-----------------------------------------------+------------------------------------+------------------+----------------+
+
+
